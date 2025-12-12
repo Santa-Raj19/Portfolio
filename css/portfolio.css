@@ -1,3 +1,4 @@
+/* portfolio.css */
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -17,7 +18,7 @@ nav {
 }
 
 nav .logo {
-    color: #1dd1a1 !important;   /* ONLY CHANGE */
+    color: #1dd1a1 !important;
 }
 
 nav a {
@@ -34,9 +35,9 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 90px 20px;
-    background: 
+    background:
         linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-        url("https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1600") 
+        url("https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1600")
         center/cover no-repeat;
     color: white;
     position: relative;
@@ -103,7 +104,6 @@ nav a:hover {
 }
 .exp-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
 }
 .exp-icon {
     width: 55px;
@@ -155,7 +155,6 @@ nav a:hover {
 }
 .skill-box:hover {
     transform: translateX(10px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
 }
 .skill-box i {
     font-size: 26px;
@@ -209,4 +208,14 @@ footer {
     color: white;
     text-align: center;
     padding: 22px;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 900px) {
+  .exp-grid, .project-grid, .skill-list {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  nav { padding: 12px 20px; }
+  .hero h1 { font-size: 34px; }
 }
